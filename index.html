@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/responsive.js"></script>
+    <script src="js/script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -16,7 +19,7 @@
                         <li class="nav-item"><a href="" class="link nav-link">Каталог</a></li>
                         <li class="nav-item"><a href="" class="link nav-link">Доставка и оплата</a></li>
                         <li class="nav-item"><a href="" class="link nav-link">Отзывы</a></li>
-                        <li class="nav-item"><a href="">
+                        <li class="nav-item"><a href="" class="logo-wrapper" data-move="main-header,1,800">
                             <div class="logo">
                                 <img src="img/logo.png" alt="Логотип сайта Botanica"/>
                             </div>
@@ -27,6 +30,11 @@
                     </ul>
                 </div>
             </nav>
+            <div class="icon-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
         </header>
         <main>
             <div class="container">
@@ -34,12 +42,12 @@
                 <div class="intro__left-col">
                     <h1 class="main-title">Авторские букеты<br>
                         в <span class="h1-italic">Петербурге</span></h1>
-                        <div class="sub-title">Оригинальные свежие букеты<br> с доставкой по всему городу</div>
+                        <div class="sub-title">Оригинальные свежие букеты с доставкой по всему городу</div>
                         <a href="" class="btn btn-watch-catalogue">Смотреть Каталог</a>
                 </div>
                 <div class="intro__right-col">
-                    <img src="img/pink-roses.jpg" alt="Парень с розами в руках" />
-                    <img src="img/white-roses.jpg" alt="Парень с белыми розами в руках" />
+                    <div class="intro-image-wrapper"><img src="img/pink-roses.jpg" alt="Парень с розами в руках" /></div>
+                    <div class="intro-image-wrapper"><img src="img/white-roses.jpg" alt="Парень с белыми розами в руках" /></div>
                 </div>
             </section>
             <section class="about">
@@ -92,27 +100,33 @@
             </section>
             <section class="bouquets">
                 <div class="bouquets-items">
-                    <a href="" class="bouquet-item">
-                        <img src="img/wedding-bouquets.jpg" alt="" />
-                        <div class="bouquet-item__text">
-                            <h2 class="bouquet-item__title">Свадебные букеты</h2>
-                            <div class="bouquet-item__descr">Букеты для невест</div>
-                        </div>
-                    </a>
-                    <a href="" class="bouquet-item">
-                        <img src="img/peonies.jpg" alt="" />
-                        <div class="bouquet-item__text">
-                            <h2 class="bouquet-item__title">Букеты с пионами</h2>
-                            <div class="bouquet-item__descr">Букеты с сезонными пионами</div>
-                        </div>
-                    </a>
-                    <a href="" class="bouquet-item">
-                        <img src="img/choose-bouquet.jpg" alt="" />
-                        <div class="bouquet-item__text">
-                            <h2 class="bouquet-item__title">Выбрать букет</h2>
-                            <div class="bouquet-item__descr">Букеты в ассортименте</div>
-                        </div>
-                    </a>
+                    <div class="bouquet-item">
+                        <a href="" class="bouquet-item-link">
+                            <img src="img/wedding-bouquets.jpg" alt="" />
+                            <div class="bouquet-item__text">
+                                <h2 class="bouquet-item__title">Свадебные букеты</h2>
+                                <div class="bouquet-item__descr">Букеты для невест</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bouquet-item">
+                    <a href="" class="bouquet-item-link">
+                            <img src="img/peonies.jpg" alt="" />
+                            <div class="bouquet-item__text">
+                                <h2 class="bouquet-item__title">Букеты с пионами</h2>
+                                <div class="bouquet-item__descr">Букеты с сезонными пионами</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bouquet-item">
+                        <a href="" class="bouquet-item-link">
+                            <img src="img/choose-bouquet.jpg" alt="" />
+                            <div class="bouquet-item__text">
+                                <h2 class="bouquet-item__title">Выбрать букет</h2>
+                                <div class="bouquet-item__descr">Букеты в ассортименте</div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </section>
             <section class="discount-banner">
@@ -197,30 +211,30 @@
                 </div>
             </section>
         </div>
-        <div class="map">
+        <div class="contacts">
             <div class="map-overlay">
-                <h2>Мы ждем вас</h2>
-                <div class="map-overlay-items">
-                    <div class="map-overlay-item">
-                        <div class="map-overlay-item__title">Приходите к нам:</div>
-                        <div class="map-overlay-item__text">Санкт-Петербург,<br>
+                <h2 class="contacts-title">Мы ждем вас</h2>
+                <div class="contacts-items">
+                    <div class="contacts-item">
+                        <div class="contacts-item__title">Приходите к нам:</div>
+                        <div class="contacts-item__text">Санкт-Петербург,<br>
                             ул. Большая Конюшенная, 19</div>
                     </div>
-                    <div class="map-overlay-item">
-                        <div class="map-overlay-item__title">Режим работы:</div>
-                        <div class="map-overlay-item__text">Пн-Вск, с <span class="medium-text">9-00</span> до <span class="medium-text">20-00</span></div>
+                    <div class="contacts-item">
+                        <div class="contacts-item__title">Режим работы:</div>
+                        <div class="contacts-item__text">Пн-Вск, с <span class="medium-text">9-00</span> до <span class="medium-text">20-00</span></div>
                     </div>
-                    <div class="map-overlay-item">
-                        <div class="map-overlay-item__title">Позвоните нам:</div>
-                        <div class="map-overlay-item__text"><a href="tel:+78129834719" class="link"><span class="medium-text">+ 7 (812) 983-47-19</span></a></div>
+                    <div class="contacts-item">
+                        <div class="contacts-item__title">Позвоните нам:</div>
+                        <div class="contacts-item__text"><a href="tel:+78129834719" class="link"><span class="medium-text ws-no-wrap">+ 7 (812) 983-47-19</span></a></div>
                     </div>
-                    <div class="map-overlay-item">
-                        <div class="map-overlay-item__title">Напишите нам:</div>
-                        <div class="map-overlay-item__text"><a href="mailto:info@botanika.ru" class="link"><span class="medium-text">info@botanika.ru</span></a></div>
+                    <div class="contacts-item">
+                        <div class="contacts-item__title">Напишите нам:</div>
+                        <div class="contacts-item__text"><a href="mailto:info@botanika.ru" class="link"><span class="medium-text ws-no-wrap">info@botanika.ru</span></a></div>
                     </div>
                 </div>
             </div>
-            <img src="img/map.jpg" alt="Наш адрес: Санкт-Петербург, ул. Большая Конюшенная, 19" width="100%"/>
+            <img src="img/map.jpg" class="map" alt="Наш адрес: Санкт-Петербург, ул. Большая Конюшенная, 19" width="100%"/>
         </div>
     </main>
     <footer class="main-footer">
